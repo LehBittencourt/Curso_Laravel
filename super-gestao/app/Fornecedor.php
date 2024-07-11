@@ -9,6 +9,7 @@ class Fornecedor extends Model
 {
     use SoftDeletes;
 
+    
 }
 
 

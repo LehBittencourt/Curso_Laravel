@@ -20,7 +20,7 @@ return new class extends Migration
             $table->timestamps();
 
             //constreint de relacionamento
-            $table->foreign('produto_id')->references('id')->on('produtos');
+            $table->foreign('produto_id')->references('id')->on('produtos')->onDelete('cascade');
             $table->unique('produto_id');
         });
     }
